@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 80vw;
+  margin: 10px auto;
+}
+
+header {
+  font-family: "Poppins";
+}
+header h2 {
+  font-family: "PT Serif";
+  font-size: 36px;
+  margin: 25px 0;
+}
+header h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+header p {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 15px 0;
+  width: 97%;
+}
+
+.member {
+  width: fit-content;
+  font-family: "Poppins";
+  position: relative;
+}
+.member img {
+  max-width: 140px;
+}
+.member .position {
+  font-family: "PT Serif";
+  font-size: 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+.member .name {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: -5px;
+}
+.member:nth-child(even) {
+  transform: translateY(70px);
+}
+
+main {
+  margin: 55px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 150px;
+  font-family: "Poppins";
+}
+footer a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+footer a:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+@media (min-width: 760px) {
+  body {
+    margin: 40px auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header div {
+    width: 50%;
+  }
+  header h2 {
+    margin-top: 0;
+  }
+  header p {
+    font-size: 18px;
+    width: 75%;
+  }
+
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .member:nth-child(2) {
+    transform: translateY(70px);
+  }
+  .member:nth-child(5) {
+    transform: translateY(140px);
+  }
+  .member img {
+    max-width: 240px;
+  }
+  .member .position {
+    right: -15px;
+    font-size: 12px;
+  }
+  .member .name {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  footer {
+    margin-top: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .member .position {
+    right: -15px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
