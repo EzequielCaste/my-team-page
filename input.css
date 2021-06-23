@@ -31,6 +31,8 @@ header p {
 }
 
 .member {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-family: "Poppins";
   position: relative;
@@ -45,9 +47,11 @@ header p {
   display: inline-block;
   position: absolute;
   top: 0;
-  right: -15px;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+  right: -13px;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  -webkit-text-orientation: mixed;
+          text-orientation: mixed;
 }
 .member .name {
   font-size: 14px;
@@ -60,9 +64,9 @@ header p {
 }
 
 main {
-  margin: 55px 0;
+  margin: 3rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 35px;
 }
 
@@ -129,6 +133,4 @@ footer a:hover {
   .member .position {
     right: -15px;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=input.css.map */

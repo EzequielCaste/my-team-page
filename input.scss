@@ -42,7 +42,7 @@ header {
     display: inline-block;
     position: absolute;
     top: 0;
-    right: -15px;
+    right: -13px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     // transform: translate(-210%, -103px);
@@ -58,9 +58,9 @@ header {
   }
 }
 main {
-  margin: 55px 0;
+  margin: 3rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 35px;
 }
 footer {
