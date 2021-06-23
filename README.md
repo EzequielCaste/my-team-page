@@ -66,6 +66,6 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website [ezecaste.web.app](https://ezecaste.web.app/)
+- Website [Personal website / Blog](https://www.ezecastellanos.com.ar)
 - GitHub [@EzequielCaste](https://github.com/EzequielCaste)
 - Twitter [@Ezequiel_Caste](https://twitter.com/Ezequiel_Caste)
